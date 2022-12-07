@@ -1,0 +1,62 @@
+.label-check {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 146%;
+  letter-spacing: 0.03em;
+  color: var(--silver);
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+
+  &__hidden {
+    visibility: hidden;
+
+    &:checked {
+      outline: 0;
+      color: green;
+    }
+    &:checked + span svg {
+      background-color: var(--blue);
+      border: 0;
+    }
+  }
+  &__text {
+    color: var(--blue);
+  }
+  &__regul {
+    margin-top: 20px;
+  }
+  &__bird {
+    position: relative;
+    color: var(--white);
+    background-color: var(--white);
+    border: 2px solid var(--border-modal-bird);
+    border-radius: 2px;
+    transition: border 0.05s, color 0.05s, bacground-color 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  }
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__modal-button-s {
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 4px;
+    border: 0;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.875em;
+    cursor: pointer;
+    margin-top: 30px;
+    padding-right: 10px 42px;
+    width: 200px;
+    height: 50px;
+  }
+}

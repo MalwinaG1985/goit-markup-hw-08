@@ -1,0 +1,122 @@
+.footer {
+    background-color: var(--background-grey);
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--footer-color-link);
+    height: 252px;
+
+    &__all {
+    display: flex;
+    flex-direction: row;
+  }
+  }
+  
+  .address {
+    color: var(--white);
+    color: var(--footer-color-link);
+    font-style: normal;
+    text-align: left;
+    margin-right: 70px;
+
+    &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: normal;
+    color: var(--white);
+  }
+  &__logo {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+  &__text {
+    text-decoration: none;
+    line-height: 1.71;
+    margin-bottom: 9px;
+  }
+  &__size {
+    width: 246px;
+  }
+  &__text--style{
+    font-style: normal;
+    padding-bottom: 20px;
+  }
+  &__text--underline {
+    text-decoration: underline;
+  }
+  &__text--color {
+    color: var(--footer-color-link);
+    &:hover {
+    color: var(--blue);
+  }
+  }
+  }
+
+  
+  
+  
+  /* .footer__logo-color {
+    color: var(--blue);
+  } */
+  
+  
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 0;
+    padding-top: 72px;
+    margin-bottom: 20px;
+  }
+  &__style {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--white);
+    position: relative;
+    transition: border-color 250ms var(--cubic);
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-icons-background);
+    cursor: pointer;
+    --color2: currentColor;
+    transition: border-color 250ms var(--cubic);
+
+    &:hover{
+    background-color: var(--blue);
+    transition: 250ms var(--cubic);
+  }
+  }
+  &icon--position {
+    text-align: center;
+  }
+  }
+  

@@ -1,0 +1,38 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  padding-left: 0%;
+  gap: 8px;
+  width: 1200px;
+  margin-bottom: 50px;
+  margin-top: 0;
+  transition: 250ms var(--cubic);
+}
+
+&__link:hover {
+  box-shadow: var(--box-shadow);
+  background-color: var(--blue);
+  color: var(--white);
+}
+&__filter{
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 22px;
+  transition: 250ms var(--cubic);
+}
+}
+
+
+
+
