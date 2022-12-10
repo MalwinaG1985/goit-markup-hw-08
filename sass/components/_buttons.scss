@@ -5,6 +5,13 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  border-radius: 4px;
+
+// @media screen and (min-width: 768px) {}
+//  @media screen and (min-width: 1200px) {
+//     font-size: 44px;
+//     line-height: 60px;
+//   }
 
   &__list{
   display: flex;
@@ -17,6 +24,9 @@
   margin-bottom: 50px;
   margin-top: 0;
   transition: 250ms var(--cubic);
+  // align-items: flex-start;
+  // flex-direction: row;
+
 }
 
 &__link:hover {
@@ -24,7 +34,7 @@
   background-color: var(--blue);
   color: var(--white);
 }
-&__filter{
+&__fillter{
   border: none;
   border-radius: 4px;
   cursor: pointer;

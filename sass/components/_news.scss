@@ -1,6 +1,16 @@
 .news {
   display: flex;
-  padding-left: 78px;
+  flex-direction: column;
+  column-gap: 12px;
+
+@media screen and(min-width:768px){
+
+}
+
+  @media screen and(min-width:$desktop){
+  padding-left: 78px;  
+  flex-direction: row;
+  }
 
   &__title {
     font-weight: 700;
@@ -8,20 +18,31 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 72px;
+    padding-top: 12px;
     margin-top: 0;
     color: var(--white);
     margin-bottom: 20px;
+
+    @media screen and(min-width:$desktop){
+      padding-top:35px;
+      text-align: left;
+    }
   }
   &__input {
     background-color: inherit;
     border: 1px solid var(--border-color-input);
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     padding: 15px;
     color: var(--white);
     outline: 0;
+
+    @media screen and(min-width:$desktop){
+      padding:15px;
+      width:358px;
+    } 
   }
+
   &__dokument-button {
     background-color: var(--blue);
     color: var(--white);
@@ -36,15 +57,22 @@
     letter-spacing: 0.06em;
     display: block;
     margin: auto;
+
+
+
   }
   &__btn-down {
-    margin-left: 12px;
-    margin-top: 108px;
+    margin-top: 18px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 24px;
+
+    @media screen and (min-width:$desktop) {
+        margin-left:12px;
+        margin-top:70px;
+      }
   }
   &__icon-send > svg {
     padding-left: 24px;

@@ -1,9 +1,27 @@
+.hide{
+  visibility: hidden;
+  width:0;
+  height:0;
+
+  @media screen and (min-width:1200px){
+    visibility:visible;
+    width: 1170px;
+    height: 386px;
+    // text-align: center;
+    // flex-wrap: wrap;
+    // display: flex;
+    // justify-content: center;
+    margin:auto;
+
 .sub-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px
 }
-
 .wrapper2 {
   width: 1170px;
   height: 386px;
@@ -17,6 +35,7 @@
     display: block;
     filter: var(--drop-shadow);
   }
+
   &__text-images-one {
     position: relative;
 
@@ -64,6 +83,7 @@
       opacity: 80%;
     }
   }
+
   &__text-images-tree {
     position: relative;
 
@@ -88,3 +108,8 @@
     }
   }
 }
+  }
+}
+
+
+
