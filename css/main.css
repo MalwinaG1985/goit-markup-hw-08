@@ -1096,6 +1096,14 @@ ul {
   width: 0;
   height: 0;
 }
+@media screen and (max-width: 1199px) {
+  .hide {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hide {
     visibility: visible;
@@ -1444,6 +1452,7 @@ ul {
   border: none;
   border-radius: 50%;
   outline: none;
+  visibility: hidden;
 }
 
 @media (min-width: 768px) {
@@ -1463,6 +1472,7 @@ ul {
   margin-top: -60px;
   background-color: transparent;
   border: none;
+  visibility: visible;
 }
 .js-open-menu:hover, .js-open-menu:focus {
   background-color: rgba(0, 0, 0, 0.1);

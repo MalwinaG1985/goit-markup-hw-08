@@ -12,6 +12,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  visibility:hidden;
 }
 
 @media (min-width: 768px) {
@@ -32,7 +33,7 @@
   margin-top:-60px;
   background-color: transparent;
   border: none;
-
+  visibility:visible;
   &:hover,
     &:focus {
       background-color: rgba(0, 0, 0, 0.1);
